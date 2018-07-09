@@ -37,8 +37,11 @@
 		2) Stop MongoDB
 			`sudo service mongod stop`
 	
-	Run the Flask file(test.py)
-		`python test.py`
+	Run the Flask file in background (test.py)
+	         step 1:
+		`sudo service mongod start`
+		 step 2:
+		`sudo python test.py >> /tnp/log.txt 2>&1 &`
 
 	Browse with any Browser to the following link and DONE !
 		`http://localhost:5000'
