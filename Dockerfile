@@ -1,5 +1,5 @@
-FROM alpine:3.1
-
+FROM ubuntu:16.04
+RUN apt-get update
 # Update
 RUN apk add --update python py-pip
 
