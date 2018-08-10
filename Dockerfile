@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 RUN apt-get update
-# Update
-RUN apk add --update python py-pip
+RUN apt-get install build-essential python-dev python-pip
+
 
 # Install app dependencies
 RUN pip install Flask
