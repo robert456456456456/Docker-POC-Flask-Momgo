@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
-RUN apt-get update
 
-RUN apt-get install python-dev
-RUN apt-get install python-pip
-
-
+# Install Python.
+RUN \
+  apt-get update && \
+  apt-get install -y python python-dev python-pip python-virtualenv && \
+  rm -rf /var/lib/apt/lists/*
 # Install app dependencies
 RUN pip install Flask
 RUN pip install pymongo
