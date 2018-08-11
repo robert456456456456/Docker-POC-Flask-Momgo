@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt-get update
-RUN apt-get install build-essential
+
 RUN apt-get install python-dev
 RUN apt-get install python-pip
 
